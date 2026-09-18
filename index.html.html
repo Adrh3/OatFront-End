@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Juros simples</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!--1-Título e Subtítulo da página-->
+    <section class="inicioPage" id="pageInicial"> <!--Criado para servir de âncora(VOLTAR PARA O INÍCIO)-->
+        <header>
+            <h1 class="saudacao">
+                BEM-VINDO
+            </h1>
+            <p class="subtitulo">
+                Meu chamo Adriano e vou te ajudar a calcular o juros do seu empréstimo.
+            </p>
+            <nav class="buttonMenu">
+                <a href="#simulacao" class="botao1">Realizar Simulação</a> <!--Botão que levará até a parte de SIMULAÇÃO-->
+            </nav>
+        </header>
+    </section>
+    <!--2-Conteúdo principal da página-->
+    <main>
+        <section id="simulacao"> <!--Tem que ser id, pq usei #simulacao como âncora-->
+            <h2>Simulação de juros simples de um empréstimo</h2>
+            <ul>
+                <li>
+                    <h4>Valor inicial (R$)</h4>
+                    <input type="number" id="valor" placeholder="Digite o valor do empréstimo">
+                </li>
+                <li>
+                    <h4>Taxa de Juros (% ao mês)</h4>
+                    <input type="number" id="juros" placeholder="Digite a taxa de juros mensal">
+                </li>
+                <li>
+                    <h4>Quantidade de Meses</h4>
+                    <input type="number" id="tempo" placeholder="Digite o número de meses">
+                </li>
+                <li>
+                    <button type="button" onclick="CalcularJuros()" class="buttonCalculo">Calcular</button>
+                </li>
+                <li>
+                    <h4>Valor de juros (R$)</h4>
+                    <input type="number" id="jurosFinal" name="jurosFinal" readonly>
+                    <!--Readonly (Locais que vão aparecer apenas o resultado)-->
+                </li>
+                <li>
+                    <h4>Valor total final (R$)</h4>
+                    <input type="number" id="resultadoFinal" name="resultadoFinal" readonly>
+                </li>
+                <a href="#pageInicial" class="botaoInicio">Início</a>
+            </ul>
+        </section>
+        </section>
+    </main>
+    <footer>
+        <h5>
+            Desenvolvido apenas, e exclusivamente, para a OAT 1 de Desenvolvimento Front-End.
+        </h5>
+        </foooter>
+</body>
+
+</html>

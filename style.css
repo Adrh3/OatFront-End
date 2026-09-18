@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins";
+    text-align: center;
+    background-color: #ebebeb
+}
+.inicioPage{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.saudacao{
+    font-size: 120px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+.subtitulo{
+    font-size: 20px;
+    transform: translateY(-20px); /*Serve para fazer o parágrafo subir verticalmente*/
+}
+.botao1{
+    display: block;
+    width: 240px;
+    padding: 14px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0d33b3;
+    font-size: 18px;
+    transition: 0.3;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-20px); /*Serve para fazer o botão subir verticalmente*/
+}
+.botao1:hover{
+    background-color: #000099;
+    border-color: #555;
+}
+#simulacao{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebebeb;
+}
+h2{
+    text-align: center;
+    font-size: 60px;
+    color: #000000;
+    margin-bottom: 40px;
+}
+input{
+    width: 600px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+h4{
+    text-align: center;
+    font-size: 20px;
+    color:#000000 ;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 20px;
+}
+.buttonCalculo{
+    width: 100%;
+    padding: 16px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 12px;
+    background-color: #0d33b3;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.buttonCalculo:hover{
+    background-color: #000099;
+    border-color: #555
+}
+ul{
+    list-style: none;
+}
+.botaoInicio{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color:#0d33b3 ;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.botaoInicio:hover{
+    background-color: #000099;
+    border-color: #555;
+}
+.trajetoria{
+    display: flex;
+    align-items: stretch;
+}
+.foto{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid black;
+}
