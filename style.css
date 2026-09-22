@@ -113,14 +113,3 @@ ul{
     background-color: #000099;
     border-color: #555;
 }
-.trajetoria{
-    display: flex;
-    align-items: stretch;
-}
-.foto{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid black;
-}
